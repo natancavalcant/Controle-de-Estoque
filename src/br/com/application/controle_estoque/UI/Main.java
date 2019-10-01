@@ -30,7 +30,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
       //Produto produto;
       //Historico his = new Historico(new produtoDAO().getProduto(3), "Entrou", 5, dateToString(new Date()));
-      List<Historico> lhis = new HistoricoDAO().listHistorico(3);
+      List<Historico> lhis = new HistoricoDAO().listHistorico();
       //new HistoricoDAO().inserir(his);
   
       for(Historico his : lhis){

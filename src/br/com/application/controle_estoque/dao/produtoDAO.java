@@ -131,6 +131,23 @@ public class produtoDAO {
         return produto;
     }
 
+    public Produto getProdutoById(int Id) throws SQLException{
+        sql = "select * from produtos where id = ?";
+
+        con = ConnectionFactory.getConnection();
+
+        st = con.prepareStatement(sql);
+        st.setInt(1, Id);
+        Produto produto = null;
+        ResultSet rs = st.executeQuery();
+        if(rs.next()){
+            produto = new Produto(rs.getString("nome"), rs.getInt("codigo"), rs.getInt("quantidade"), rs.getFloat("preco"));
+        }
+
+        con.close();
+        return produto;
+    }
+
     /**
      * Metodo obtém uma lista de todos os produtos do BD.
      * @return List - lista de Objetos do tipo Produto.

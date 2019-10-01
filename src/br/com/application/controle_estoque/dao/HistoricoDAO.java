@@ -69,13 +69,13 @@ public class HistoricoDAO {
         List<Historico> his = new ArrayList<>();
         
         while(rs.next()){
-            int codigo_produto = rs.getInt("id_produto");
+            int Id = rs.getInt("id_produto");
             int movimentacao = rs.getInt("movimentacao");
             String entrada_saida = rs.getString("entrada_saida");
             String data = rs.getString("data");
 
-            //Produto p = new produtoDAO().getProduto(codigo_produto);
-            Historico h = new Historico(new produtoDAO().getProduto(codigo_produto), entrada_saida, movimentacao, data);
+            Produto p = new produtoDAO().getProdutoById(Id);
+            Historico h = new Historico(p, entrada_saida, movimentacao, data);
             his.add(h);
         }
 
