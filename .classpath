@@ -1,0 +1,4 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<classpath>
+        <classpathentry kind="lib" path="lib/postgresql-42.2.8.jar"/>
+</classpath>

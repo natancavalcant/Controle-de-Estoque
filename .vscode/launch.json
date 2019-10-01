@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "br.com.application.controle_estoque.UI.Main",
+            "projectName": "Controle_Estoque_997189ff"
+        }
+    ]
+}
