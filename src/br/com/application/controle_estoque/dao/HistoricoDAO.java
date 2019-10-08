@@ -76,6 +76,7 @@ public class HistoricoDAO {
 
             Produto p = new produtoDAO().getProdutoById(Id);
             Historico h = new Historico(p, entrada_saida, movimentacao, data);
+            
             his.add(h);
         }
 
@@ -88,6 +89,7 @@ public class HistoricoDAO {
      * @return list<Historico>- retorna uma lista do tipo historico.
      * @throws SQLException
      */
+
     public List<Historico> listHistorico(int codigo) throws SQLException{
         sql = "select * from historico where id_produto = ?";
         Produto p = new produtoDAO().getProduto(codigo);

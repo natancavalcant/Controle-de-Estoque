@@ -69,6 +69,12 @@ public class produtoDAO {
         
         con.close();
     }
+    /**
+     * 
+     * @param codigo
+     * @param valor
+     * @throws SQLException
+     */
     public void alterarQuantidade(int codigo, int valor) throws SQLException {
         sql = "update produtos set quantidade = quantidade+? where codigo = ?";
         

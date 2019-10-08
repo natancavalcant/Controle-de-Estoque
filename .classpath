@@ -2,3 +2,7 @@
 <classpath>
         <classpathentry kind="lib" path="lib/postgresql-42.2.8.jar"/>
 </classpath>
+<classpath>
+        <classpathentry kind="" path="<lib/jgoodies-forms-1.8.0.jar"/>
+</classpath>
+ 

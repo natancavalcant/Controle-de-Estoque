@@ -33,6 +33,7 @@ public class Historico extends Produto {
         this.entrada_saida = entrada_saida;
         this.movimentacao = movimentacao;
         this.data = stringToDate(data);
+        
     }
   
     public Historico(String nome, int codigo, int quantidade, float preco, String entrada_saida, int movimentacao, String data) {
